@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>FORMULARIO DE REGISTRO E INICIO DE SESIÓN</title>
+</head>
+<body>
+    
+    <div class="container-form login ">
+        <div class="formation">
+            <div class="info-childs">
+                <h2> Bienvenido nuevamente</h2>
+                <p>Para unirte a nuestra comunidad por favor Inicia Sesión con tus datos</p>
+                <input type="button" value="Registrarse" id="sign-up">
+            </div>
+        </div>  
+        <div id="loginContainer" class="form-information">
+            <div class="form-imformation-childs">
+                <h2>Inicia Sesión</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bx-child'></i>
+                    <i class='bx bxs-castle' ></i>
+                </div>
+                <p>o Inicia Sesión con una cuenta  </p>
+                <form class="form" id="loginForm">
+                    <div>
+                        <label>
+                            <input type="email" id="username" placeholder="Correo Electrónico" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="password" id="password" placeholder="Contraseña" required>
+                        </label>
+                    </div>
+                    <input id="btnIniciar" type="submit" value="Inicia Sesión">
+                </form>
+            </div>
+        </div>  
+    </div>
+    
+    <script src="js/script inicio.js"></script>
+    
+</body>
+</html>

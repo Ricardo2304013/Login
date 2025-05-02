@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{ /* cuerpo*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(R.jpeg);
+    background-size: cover;
+}
+
+.container-form{ /*el  contenedor de los formularios */
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px #be0f0f1a;
+    height: 500px;
+    max-width: 900px;
+    transition: all 1s ease;
+    margin: 10px;
+}
+
+.formation{    /*la ficha individual del formulario (izquierda)*/
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color:  #a5dc19;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.info-childs{    /* informacion personal y boton */
+    width: 100%;
+    padding: 0 30px;
+}
+
+.info-childs h2{ /*El titulo*/
+    font-size: 2.5rem;
+}
+
+.info-childs p{ /*El parrafo*/
+    margin: 15px 0;
+    color: #080000;
+}
+
+.info-childs input{ /*EL bottom*/
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #0f0f10;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color:#000008;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.info-childs input:hover{/*Hover (pasa a lado de mouse)*/
+    background-color: #00000a;
+    border: none;
+    color: #eaebf0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form-information{   
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width: 60%;
+    text-align: center;
+    background-color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-information-childs{
+    padding: 0 30px; /*Espacios*/
+}
+
+.form-information-childs h2{
+    color: #333;
+    font-size: 2rem;
+}
+
+.form-information-childs p{
+    color: #555;
+}
+
+.icons{
+    margin: 15px 0;
+}
+
+.icons i{
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 20px;
+    color: #000;
+    border: solid thin #000;
+    transition: background-color .3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.icons i:hover{
+    background-color: #080809;
+    color: #fff;
+}
+
+.form{
+    margin: 30px 0 0 0;
+}
+
+.form label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form label input{
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;     
+    border: solid 2px #000
+}
+
+.form label i {
+    color: #000;
+}
+
+.form input[type="submit"]{
+    background-color: #000;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 8px 8px #a5dc19;
+}
+
+.form button[type="submit"]:hover{
+    background-color: #000;
+}
+
+.hide{
+    position: absolute; /*detras de nuestro formulario*/
+    transform: translateY(-300%);
+}
+
